@@ -18,9 +18,9 @@ const ShippingLabelContainer = styled.div`
 const ShippingLabel: React.FC = () => {
   return (
     <ShippingLabelContainer>
-      <Button label="SUBSCRIPTION_ORDER" className="p-button-sm p-button-secondary p-button-rounded" />
-      <Button label="PAID" className="p-button-sm p-button-secondary p-button-rounded" />
-      <Button label="UNFULFILLED" className="p-button-sm p-button-secondary p-button-rounded" />
+      <Button label="SUBSCRIPTION_ORDER" className="p-button-sm p-button-secondary p-button-rounded" disabled/>
+      <Button label="PAID" className="p-button-sm p-button-secondary p-button-rounded" disabled/>
+      <Button label="UNFULFILLED" className="p-button-sm p-button-secondary p-button-rounded" disabled/>
     </ShippingLabelContainer>
   );
 };

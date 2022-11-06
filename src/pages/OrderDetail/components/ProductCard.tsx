@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import styled from "styled-components";
 import { DataTable } from "primereact/datatable";
 import { Column } from "primereact/column";
-import { Button } from "primereact/button";
 import ShippingInformation from "./ShippingInformation";
 import ShippingLabel from "./ShippingLabel";
 import OrderAction from "./OrderAction";
@@ -71,9 +70,9 @@ const ProductCard: React.FC = () => {
         responsiveLayout="scroll"
       >
         <Column body={imageBodyTemplate}></Column>
-        <Column field="name" header="Product"></Column>
-        <Column field="quantity" header="Quantity"></Column>
-        <Column className="product-price" field="price" header="Price"></Column>
+        <Column field="name" header="PRODUCT"></Column>
+        <Column field="quantity" header="QUANTITY"></Column>
+        <Column field="price" header="PRICE"></Column>
       </DataTable>
       <ShippingInformation />
       <ShippingLabel />

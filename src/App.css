@@ -46,4 +46,5 @@ body {
 
 .p-datatable .p-datatable-thead > tr > th {
   background: #ffffff;
+  border-bottom: 0px solid;
 }

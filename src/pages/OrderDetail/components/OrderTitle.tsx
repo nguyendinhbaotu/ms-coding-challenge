@@ -1,8 +1,7 @@
 import React from "react";
 import styled from "styled-components";
-import ProductCard from "./components/ProductCard";
 
-const OrderContainer = styled.div`
+const OrderTitleContainer = styled.div`
     display: flex;
     flex-grow: 1;
     align-items: center;
@@ -21,8 +20,8 @@ const OrderContainer = styled.div`
     }
 `;
 
-const Order: React.FC = () => (
-  <OrderContainer>
+const OrderTitle: React.FC = () => (
+  <OrderTitleContainer>
     <div className="order-title">
         <span><strong>Order </strong></span>
         <span>US5426899</span>
@@ -31,7 +30,7 @@ const Order: React.FC = () => (
         <span>Created on Mar 6th 2021</span>
         <span>Last updated on Mar 6th 2021</span>
     </div>
-  </OrderContainer>
+  </OrderTitleContainer>
 );
 
-export default Order;
+export default OrderTitle;

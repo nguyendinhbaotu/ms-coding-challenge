@@ -44,3 +44,9 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
 To learn React, check out the [React documentation](https://reactjs.org/).
+
+
+## Things are missing in project
+1. Unit Test are not fully implemented
+2. Missing BFF (backend for fronend) setup to combine data for UI.
+3. 
