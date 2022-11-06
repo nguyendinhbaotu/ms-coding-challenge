@@ -13,7 +13,7 @@ const OrderDetailContainer = styled.div`
 const OrderDetail: React.FC = () => (
     <OrderDetailContainer>
         <OrderTitle/>
-        <ProductCard/>
+        <ProductCard editMode={false}/>
     </OrderDetailContainer>
 );
 

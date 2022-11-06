@@ -14,39 +14,13 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 The page will reload if you make edits.\
 You will also see any lint errors in the console.
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-
-## Things are missing in project
+### `This source code is generated from Create React App with Typescript Template. So it's missing a lot of stuffs for a long run project`
 1. Unit Test are not fully implemented
 2. Missing BFF (backend for fronend) setup to combine data for UI.
-3. 
+3. Missing theme setup with styled component library (also it should support sass file)
+4. State Mangement is not completely designed. It's using very simple of React Context but it should have Redux or complete set of React Context Stores for future extensions.
+5. Because of time constraint, Admin Page is reusing components inside Order Detail page which is not in a good practice. Admin Page should contain different UI design or an edit mode of Order Detail page. If Admin Page is a edit mod of Order Detail page, there are some components should be placed as shared components. For now, user can edit only name on product table.
+6. I'm using PrimeReact for get quick setup for table / button but it could be re-implemented without using external library.
+7. The folder structure also not in finalized phase but the idea is breaking the applitcation into subfolders like
+/pages /shared /shared/helpers /shared/components /stores/ ...

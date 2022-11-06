@@ -2,6 +2,8 @@ import './App.css';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Layout from './layout/Layout';
 import OrderDetail from './pages/OrderDetail/OrderDetail';
+import { OrderProvider } from './stores';
+import Admin from './pages/Admin/Admin';
 
 function App() {
   return (
@@ -23,17 +25,16 @@ function App() {
     //   <Order/>
     //   <ProductCard/>
     // </div>
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<Layout />}>
-          <Route index element={<OrderDetail />} />
-          {/* <Route path="blogs" element={<Blogs />} />
-          <Route path="contact" element={<Contact />} />
-          <Route path="*" element={<NoPage />} /> */}
-        </Route>
-      </Routes>
-    </BrowserRouter>
-    
+    <OrderProvider>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Layout />}>
+            <Route index element={<OrderDetail />} />
+            <Route path="admin" element={<Admin />} />
+          </Route>
+        </Routes>
+      </BrowserRouter>
+    </OrderProvider>
   );
 }
 
